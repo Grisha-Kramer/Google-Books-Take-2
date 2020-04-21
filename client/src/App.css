@@ -65,11 +65,11 @@ input {
     border: 1px solid rgba(0,0,0,.125);
     margin: 0 auto;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: scroll
 }
 .desc {
     height: 130px;
-    padding: 10px;
+    
 }
 
 .desc h2 {
@@ -83,7 +83,7 @@ input {
 .desc h3 {
     color: #6c757d;
     font-size: 1em;
-    padding: 10px 0 10px 0;
+    
 }
 
 .desc p {
