@@ -1,16 +1,19 @@
 import React, { Component } from "react";
-import Header from "./Header"
-import Books from "./Books"
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Search from "./pages/Search"
+import Saved from "./pages/Saved"
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Books />
-
-      </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Search} />
+          <Route exact path="/search" component={Search} />
+          <Route exact path="/saved" component={Saved} />
+        </div>
+      </Router>
     );
   }
 }
