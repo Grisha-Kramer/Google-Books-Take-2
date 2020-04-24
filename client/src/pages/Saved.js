@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import API from "../utils/API"
+import API from "../utils/API";
 import Header from "../Header";
 import Books from "../Books";
-import BookCard from "../BookCard"
+import BookCard from "../BookCard";
 import "../App.css";
 
 class Saved extends Component {
@@ -24,15 +24,15 @@ class Saved extends Component {
         {this.state.savedBooks.map((book) => {
           return (
             <div className="Booksaved">
-              <BookCard  image={book.image}
-              author={book.authors}
-              description={book.description}
-              title={book.title}
-              link={book.link}
-               />
+              <BookCard
+                image={book.image}
+                author={book.authors}
+                description={book.description}
+                title={book.title}
+                link={book.link}
+              />
             </div>
           );
-
         })}
       </div>
     );
