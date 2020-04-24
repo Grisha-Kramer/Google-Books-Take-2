@@ -18,9 +18,22 @@ class Saved extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <Header />
-        <BookCard books={this.state.savedBooks} />
+        {/* <BookCard books={this.state.savedBooks} /> */}
+        {this.state.savedBooks.map((book) => {
+          return (
+            <div className="Booksaved">
+              <BookCard  image={book.image}
+              author={book.authors}
+              description={book.description}
+              title={book.title}
+              link={book.link}
+               />
+            </div>
+          );
+
+        })}
       </div>
     );
   }
