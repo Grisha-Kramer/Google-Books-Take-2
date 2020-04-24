@@ -3,7 +3,14 @@ import bookAPI from "./utils/API"
 
 const BookCard = (props) => {
  function saveBook(data) {
-    bookAPI.saveBook(data)
+   const payload ={
+     authors: data.author.join(),
+     image: data.image,
+     description: data.description,
+     title: data.title,
+     link: data.link,
+   } 
+    bookAPI.saveBook(payload)
   }
   return (
     <div className="card-container">
