@@ -1,7 +1,9 @@
 ## Google Books API Search
 
-I followed this tutorial from [Jason Rivera](https://www.youtube.com/watch?v=nT6Ud9nUzXU&list=PL_kAgwZgMfWx52BOjXE1GSWqN3Wyx13OC&index=2)
+I followed this tutorial to build the search function: [Jason Rivera](https://www.youtube.com/watch?v=nT6Ud9nUzXU&list=PL_kAgwZgMfWx52BOjXE1GSWqN3Wyx13OC&index=2)
 
+
+![]{BookSearch.gif}
 
 
 # Book Search
